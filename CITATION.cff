@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying EviOSAHS manuscript."
+title: "EviOSAHS: Structured Visual Evidence Decomposition for Multimodal OSAHS Screening"
+authors:
+  - family-names: "TBD"
+    given-names: "TBD"
+version: "0.1.0"
+date-released: "2026-05-07"
+license: "MIT"
+repository-code: "https://github.com/TBD/EviOSAHS"
+abstract: "Reference implementation for a structured visual-evidence decomposition pipeline for binary OSAHS screening from facial/neck images and structured clinical variables."
+keywords:
+  - "OSAHS"
+  - "sleep apnea"
+  - "multimodal learning"
+  - "vision-language models"
+  - "medical AI"

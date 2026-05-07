@@ -1,0 +1,41 @@
+[project]
+name = "eviosahs"
+version = "0.1.0"
+description = "Structured visual evidence decomposition for multimodal OSAHS screening."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "EviOSAHS contributors" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pillow>=10.0",
+  "scikit-learn>=1.3",
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "transformers>=4.45",
+  "accelerate>=0.33",
+  "qwen-vl-utils>=0.0.8",
+]
+keywords = [
+  "OSAHS",
+  "sleep apnea",
+  "multimodal learning",
+  "vision-language models",
+  "medical AI",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["eviosahs*"]
+
+[project.scripts]
+eviosahs-run-matrix = "eviosahs.run_matrix:main"
+eviosahs-eval-binary = "eviosahs.eval_binary:main"
+eviosahs-plot-figures = "eviosahs.plot_paper_figures:main"
